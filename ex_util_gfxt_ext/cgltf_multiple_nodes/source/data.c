@@ -18,7 +18,6 @@ int32_t gui_opts = GS_GUI_OPT_NOTITLE |
 typedef struct {
     gs_gui_context_t gui;
     gs_command_buffer_t cb;
-    gs_immediate_draw_t gsi;
 
     gs_gfxt_pipeline_t pip;
     gs_gfxt_material_t mat;
@@ -27,7 +26,6 @@ typedef struct {
 
     const char* asset_dir;
     gs_camera_t camera;
-    gs_vqs xform;
     
     gs_gfxt_scene_t scene;
 } app_t;
